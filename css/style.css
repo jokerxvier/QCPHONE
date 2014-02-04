@@ -1,0 +1,253 @@
+/* image */
+.desc_img
+{
+max-width:80%;
+margin:0 auto;
+display:block;
+}
+/* // image */
+
+.ui-listview>.ui-li-has-thumb>.ui-btn {
+padding-left: 5.25em !important;
+}
+
+.ui-page-theme-a
+{
+background-image: url('../images/bg_sq.png') !important; background-repeat: repeat !important;
+}
+
+.ui-page-theme-a .ui-panel-wrapper 
+{
+background-image: url('../images/bg_sq.png') !important; background-repeat: repeat !important;
+}
+
+#map, #map-canvas { width: 100%; height: 100%; padding: 0; }
+
+.ui-bar-b
+{
+background-image: url('../images/bg_sq_dark.png'); background-repeat: repeat;
+}
+.ui-bar-b h1
+{
+text-shadow:none; text-transform:uppercase;
+}
+
+.copyright {
+    font-size: 12px;
+    text-align: center;
+}
+
+.ui-content {
+    text-align: center;
+}
+/*styles for default here */
+.pt-menu p
+{
+width:100%;
+line-height:normal;
+word-wrap:break-word;
+white-space:normal;
+display: block;
+}
+
+.pt-menu .ui-btn, .pt-menu .ui-btn:hover {
+    cursor: pointer;
+    display: inline-block;
+    height: 150px;
+    margin: 5px !important;
+    padding: 2px;
+    text-align: center;
+    width: 110px;
+	font-size:12px;
+	word-wrap:break-word;
+    /*border-radius: 200px;*/
+	
+	/* background */
+	background: none;
+	border-color: transparent;
+	color: rgb(51, 51, 51);
+	text-shadow: 0px 1px 0px rgb(243, 243, 243);
+	border-width: 0;
+	border-style:none;
+	box-shadow:none;
+}
+
+.pt-menu .ui-btn-inner {
+    border: 0;
+}
+
+.pt-menu .ui-btn img {
+    /* height: 50px; */
+	width: 95%;
+	display: block;
+	margin: 0 auto;
+}
+
+.header_style
+{
+background-image: url('../images/bg_sq_dark.png');
+background-repeat: repeat;
+text-align:center;
+}
+
+#home h1 img
+{
+width:80%;
+}
+
+/*styles for 480px and up */
+@media screen and (min-width: 480px) {
+	.pt-menu .ui-btn, .pt-menu .ui-btn:hover {
+		height: 130px;
+		width: 95px;
+	}
+	/* image */
+	.desc_img
+	{
+	max-width:40%;
+	/* margin:0 auto; */
+	float: left;
+	display:block;
+	margin-right:15px;
+	}
+	/* // image */
+	
+	#home h1 img
+	{
+	width:75%;
+	}
+}
+
+/*styles for 500px and under
+@media screen and (max-width: 460px) {
+	.pt-menu .ui-btn {
+		height: 95px;
+		width: 95px;
+	}
+}*/
+
+/* testing em unit support - 33em should be 528px and 35em should be 560px in IE with default font settings */
+@media screen and (min-width: 33em) and (max-width: 35em) {
+	.pt-menu .ui-btn, .pt-menu .ui-btn:hover {
+		height: 150px;
+		width: 105px;
+	}
+	#home h1 img
+	{
+	width:70%;
+	}
+}
+
+/*styles for 620px and up */
+@media only screen and (min-width: 620px) {
+	.pt-menu .ui-btn, .pt-menu .ui-btn:hover {
+		height: 190px;
+		width: 160px;
+	}
+	#home h1 img
+	{
+	width:65%;
+	}
+}
+
+/*styles for 760px and up */
+@media only print, only screen and (min-width: 760px) {
+	.pt-menu .ui-btn, .pt-menu .ui-btn:hover {
+		height: 200px;
+		width: 150px;
+	}
+	
+	#home h1 img
+	{
+	width:60%;
+	}
+}
+
+/*styles for print that shouldn't apply */
+@media only print and (min-width: 800px) {
+	.pt-menu .ui-btn, .pt-menu .ui-btn:hover {
+		height: 90px;
+		width: 90px;
+	}
+	#home h1 img
+	{
+	width:55%;
+	}
+}
+
+/*styles for height 400px and under
+@media screen and (max-height: 360px) {
+	.pt-menu .ui-btn {
+		height: 90px;
+		width: 90px;
+	}
+}*/
+
+/*styles for height 600px and above
+@media screen and (min-height: 560px) {
+	.pt-menu .ui-btn {
+		height: 150px;
+		width: 150px;
+	}
+}*/
+
+/* contact page */
+#contact .ui-br {
+    border: 0;
+}
+
+/* form underline bug fix */
+.ui-br {
+    border-bottom: none !important;
+}
+
+/* form errors */
+label.error {
+    color: red;
+    padding-top: .5em;
+    vertical-align: top;
+    font-weight:bold;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 22%;
+}
+
+
+/* table styles */
+.tablerow {
+    display: inline-block;
+    width: 100%;
+}
+.left-table {
+    text-align: right;
+    width: 25%; float: left;
+    padding-right: 2%;
+    font-weight: bold;
+}
+.right-table {
+    text-align: left;
+    width: 73%; float: left;
+}
+
+/* bottom back and next buttons */
+.previous-btn {
+    float: left;
+}
+.next-btn {
+    float: right;
+}
+
+/* toggle buttons styles */
+.ui-collapsible-heading-toggle {
+    border: none;
+}
+
+/* ui component tweaks */
+.ui-textalign-left {
+    text-align: left;
+}
+
+/* portfolio item right button stlye fix */
+.portfolio-item .ui-btn-icon-notext {
+    padding: 0 !important;
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QC App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/jquery.mobile-1.4.0.min.js"></script>
+        <link href="css/jquery.mobile.structure-1.4.0.min.css" rel="stylesheet">
+        <link href="css/jquery.mobile.theme-1.4.0.min.css" rel="stylesheet">
+        <link href="css/jquery.mobile-1.4.0.min.css" rel="stylesheet">
+        <link href="css/photoswipe.css" rel="stylesheet">
+		
+        <link href="css/style.css" rel="stylesheet">
+		<link href="css/listview-grid.css" rel="stylesheet">
+        <script src="js/script.js"></script>
+        <script src="js/settings.js"></script>
+        <script src="js/klass.min.js"></script>
+        <script src="js/map.js"></script>
+        <script src="js/code.photoswipe.jquery-3.0.5.min.js"></script>
+    </head>
+
+    <body>
+        <!-- homepage --> <!-- id home -->
+        <div data-role="page" id="home">
+			<div data-position="fixed" class="header_style">
+                <h1> <img src="images/QC_App_White.png"> </h1>
+            </div>			
+            <div data-role="content">
+				<div class="pt-menu">
+					<a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+						<img src="images/icons/128/128_attractions_nowords_colored.png" alt="attractions">
+						<p>Attractions</p>
+					</a>
+					<a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+						<img src="images/icons/128/128_accommodation_nowords_colored.png" alt="accomodations">
+						<p>Accomodations</p>
+					</a>
+					<a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+						<img src="images/icons/128/128_educationandbusiness_nowords_colored.png" alt="educationbusiness">
+						<p>Education and Business</p>
+					</a>
+					<a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+						<img src="images/icons/128/128_activitiesandevents_nowords_colored.png" alt="eventsactivities">
+						<p>Events and Activities</p>
+					</a>
+					<a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+						<img src="images/icons/128/128_dining_nowords_colored.png" alt="fooddrink">
+						<p>Food and Drink</p>
+					</a>
+					<a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+						<img src="images/icons/128/128_holyplaces_nowords_colored.png" alt="holyplaces">
+						<p>Holy Places</p>
+					</a>
+					<a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+						<img src="images/icons/128/128_hospitals_nowords_colored.png" alt="hospital">
+						<p>Hospitals</p>
+					</a>
+					<a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+						<img src="images/icons/128/128_shopping_nowords_colored.png" alt="shopping">
+						<p>Shopping</p>
+					</a>
+					<a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+						<img src="images/icons/128/128_services_nowords_colored.png" alt="services">
+						<p>Services</p>
+					</a>
+					<a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+						<img src="images/icons/128/128_shopping_nowords_colored.png" alt="transportation">
+						<p>Transportation</p>
+					</a>
+					<a data-theme="d" data-corners="false" data-role="button" href="#">
+						<img src="images/icons/128/128_activitiesandevents_nowords_colored.png" alt="map">
+						<p>Map</p>
+					</a>
+				</div>
+            </div>
+        </div>
+		<!-- /responsive grid  --- list of categories--> <!-- id attractions -->
+		<div data-role="page" id="attractions">
+			<div data-role="header" data-theme="b" data-position="fixed">
+				<h1>Attractions</h1>
+				<a href="#left-panel" data-icon="grid" class="ui-btn-left">Menu</a>
+				<a href="#map" class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline"></a>
+			</div><!-- /header -->
+			
+			<div role="main" class="my-page ui-content jqm-fullwidth">
+				<ul data-role="listview" data-filter="true" data-filter-placeholder="Search..." data-inset="true">
+					<li><a href="#LaMesaDam">
+						<img src="images/LaMesaDam.png" class="ui-li-thumb">
+						<h2>La Mesa Dam</h2>
+						<p>at Quezon City</p>
+						<!--<p class="ui-li-aside">iOS</p>-->
+					</a></li>
+					<li><a href="#LaMesaDam">
+						<img src="images/LaMesaEcoPark.png" class="ui-li-thumb">
+						<h2>La Mesa Eco Park</h2>
+						<p>at Quezon City</p>
+						<!--<p class="ui-li-aside">BlackBerry</p>-->
+					</a></li>
+					<li><a href="#LaMesaDam">
+						<img src="images/QuezonMemorialCircle.png" class="ui-li-thumb">
+						<h2>Quezon Memorial Circle</h2>
+						<p>at Quezon City</p>
+						<!--<p class="ui-li-aside">Windows Phone</p>-->
+					</a></li>
+					<li><a href="#LaMesaDam">
+						<img src="images/LaMesaDam.png" class="ui-li-thumb">
+						<h2>La Mesa Dam</h2>
+						<p>at Quezon City</p>
+						<!--<p class="ui-li-aside">iOS</p>-->
+					</a></li>
+					<li><a href="#LaMesaDam">
+						<img src="images/LaMesaEcoPark.png" class="ui-li-thumb">
+						<h2>La Mesa Eco Park</h2>
+						<p>at Quezon City</p>
+						<!--<p class="ui-li-aside">BlackBerry</p>-->
+					</a></li>
+					<li><a href="#LaMesaDam">
+						<img src="images/QuezonMemorialCircle.png" class="ui-li-thumb">
+						<h2>Quezon Memorial Circle</h2>
+						<p>at Quezon City</p>
+						<!--<p class="ui-li-aside">Windows Phone</p>-->
+					</a></li>
+					<li><a href="#LaMesaDam">
+						<img src="images/LaMesaDam.png" class="ui-li-thumb">
+						<h2>La Mesa Dam</h2>
+						<p>at Quezon City</p>
+						<!--<p class="ui-li-aside">iOS</p>-->
+					</a></li>
+					<li><a href="#LaMesaDam">
+						<img src="images/LaMesaEcoPark.png" class="ui-li-thumb">
+						<h2>La Mesa Eco Park</h2>
+						<p>at Quezon City</p>
+						<!--<p class="ui-li-aside">BlackBerry</p>-->
+					</a></li>
+					<li><a href="#LaMesaDam">
+						<img src="images/QuezonMemorialCircle.png" class="ui-li-thumb">
+						<h2>Quezon Memorial Circle</h2>
+						<p>at Quezon City</p>
+						<!--<p class="ui-li-aside">Windows Phone</p>-->
+					</a></li>
+					
+				</ul>
+			</div><!-- /content -->
+			<!-- id nav-panel-->
+			<div data-role="panel" id="left-panel" data-theme="b">
+				<ul data-role="listview" data-theme="b" data-divider-theme="b" data-inset="false">
+					<li data-icon="false"><a href="#home">Home</a></li>
+					<li data-icon="false"><a href="#">Map</a></li>
+					<li data-role="list-divider">Categories</li>
+					<li><a href="#attractions">Attractions</a></li>
+					<li><a href="#attractions">Accomodations</a></li>
+					<li><a href="#attractions">Education and Business</a></li>
+					<li><a href="#attractions">Events and Activities</a></li>
+					<li><a href="#attractions">Food and Drink</a></li>
+					<li><a href="#attractions">Holy Places</a></li>
+					<li><a href="#attractions">Shopping</a></li>
+					<li><a href="#attractions">Services</a></li>
+					<li><a href="#attractions">Transportation</a></li>
+					
+				</ul>
+			</div><!-- /panel -->
+			
+			
+		</div><!-- /page -->
+		
+		<!-- portfolio page 1 -->
+        <div data-role="page" id="LaMesaDam" data-title="LaMesaDam">
+            <div data-role="header" data-theme="b" data-position="fixed">
+                <h1>Attractions</h1>
+				<a href="#left-panel1" data-icon="grid" class="ui-btn-left">Menu</a>
+				<a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline"></a>
+            </div>
+            <div role="main" class="my-page desc_page ui-content jqm-fullwidth">
+                <img src="images/LaMesaDam.png" class="desc_img ui-link ui-btn ui-btn-d ui-shadow">
+				<h1>La Mesa Dam</h1>
+				<h5>The La Mesa Dam is a dam in Quezon City in the Philippines. It is part of the Angat-Ipo-La Mesa water system, which supplies most of the water supply of Metro Manila. The La Mesa Dam is an earth dam whose reservoir can hold up to 50.5 million cubic meters occupying an area of 27 square kilometers.
+				Metro Manila and its surrounding areas are divided into two water concessionaires: Maynilad Water (red) and Manila Water (blue).
+
+				The water collected in the reservoir is treated on-site by the Maynilad Water Services, and at the Balara Treatment Plant further south by the Manila Water. Both water companies are private concessionaires awarded by the Metropolitan Waterworks and Sewerage System, the government agency in charge of water supply.</h5>
+            </div>
+			<!-- id nav-panel-->
+			<div data-role="panel" id="left-panel1" data-theme="b">
+				<ul data-role="listview">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#attractions">Attractions</a></li>
+					<li><a href="#attractions">Accomodations</a></li>
+					<li><a href="#attractions">Education and Business</a></li>
+					<li><a href="#attractions">Events and Activities</a></li>
+					<li><a href="#attractions">Food and Drink</a></li>
+					<li><a href="#attractions">Holy Places</a></li>
+					<li><a href="#attractions">Shopping</a></li>
+					<li><a href="#attractions">Services</a></li>
+					<li><a href="#attractions">Transportation</a></li>
+					<li><a href="#map">Map</a></li>
+				</ul>
+			</div><!-- /panel -->
+        </div>
+		
+		<!-- MAP here -->
+		<div data-role="page" id="map" data-title="map" data-url="map">
+			 <div data-role="header" data-theme="b" data-position="fixed">
+                <h1>Map</h1>
+				<!--<a href="#left-panel2" class="ui-btn ui-shadow ui-corner-all ui-icon-grid ui-btn-icon-notext ui-btn-inline"></a>-->
+				<a href="#left-panel2" data-icon="grid" class="ui-btn-left">Menu</a>
+				<a href="#map" class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline"></a>
+            </div>
+			<div role="main" class="ui-content" id="map-canvas">
+				<!-- map loads here... -->
+			</div>
+			<!-- id nav-panel-->
+			<div data-role="panel" id="left-panel2" data-theme="b">
+				<ul data-role="listview">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#attractions">Attractions</a></li>
+					<li><a href="#attractions">Accomodations</a></li>
+					<li><a href="#attractions">Education and Business</a></li>
+					<li><a href="#attractions">Events and Activities</a></li>
+					<li><a href="#attractions">Food and Drink</a></li>
+					<li><a href="#attractions">Holy Places</a></li>
+					<li><a href="#attractions">Shopping</a></li>
+					<li><a href="#attractions">Services</a></li>
+					<li><a href="#attractions">Transportation</a></li>
+					<li><a href="#map">Map</a></li>
+				</ul>
+			</div><!-- /panel -->
+		</div>
+		<!-- / MAP here -->
+		
+    </body>
+
+</html>
