@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <title>Hello World</title>
+        <link href="css/jquery.mobile.structure-1.4.0.min.css" rel="stylesheet">
+        <link href="css/jquery.mobile.theme-1.4.0.min.css" rel="stylesheet">
+        <link href="css/jquery.mobile-1.4.0.min.css" rel="stylesheet">
+        <link href="css/photoswipe.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+		<link href="css/listview-grid.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="app">
+           		<!--*******************************Template HERE*********************-->	
+                	 <!-- homepage --> <!-- id home -->
+                                <div data-role="page" id="home">
+                                    <div data-role="header" data-theme="b" data-position="fixed">
+                                         <h1 class="header_style"> <img src="img/QC_App_White.png"> </h1>
+                                    </div><!-- /header -->
+                                    <div data-role="content">
+                                        <div class="pt-menu">
+                                            <a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+                                                <img src="img/icons/256/256_attractions_nowords_colored.png" alt="attractions">
+                                                <p>Attractions</p>
+                                            </a>
+                                            <a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+                                                <img src="img/icons/256/256_dining_nowords_colored.png" alt="dining">
+                                                <p>Dining</p>
+                                            </a>
+                                            <a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+                                                <img src="img/icons/256/256_educationandbusiness_nowords_colroed.png" alt="educationbusiness">
+                                                <p>Education</p>
+                                            </a>
+                                            <a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+                                                <img src="img/icons/256/256_activitiesandevents_nowords_colored.png" alt="eventsactivities">
+                                                <p>Events</p>
+                                            </a>
+                                            <a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+                                                <img src="img/icons/256/256_holyplaces_nowords_colored.png" alt="holyplaces">
+                                                <p>Holy Places</p>
+                                            </a>
+                                            <a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+                                                <img src="img/icons/256/256_hospitals_nowords_colored.png" alt="hospital">
+                                                <p>Hospitals</p>
+                                            </a>
+                                            <a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+                                                <img src="img/icons/256/256_accommodations_nowords_colored.png" alt="hotels">
+                                                <p>Hotels</p>
+                                            </a>
+                                            <a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+                                                <img src="img/icons/256/256_shopping_nowords_colored.png" alt="shopping">
+                                                <p>Shopping</p>
+                                            </a>
+                                            <a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+                                                <img src="img/icons/256/256_services_nowords_colored.png" alt="services">
+                                                <p>Services</p>
+                                            </a>
+                                            <a data-theme="d" data-corners="false" data-role="button" href="#attractions">
+                                                <img src="img/icons/256/256_transportation_nowords_colored.png" alt="transportation">
+                                                <p>Transport</p>
+                                            </a>
+                                            <a data-theme="d" data-corners="false" data-role="button" href="#">
+                                                <img src="img/icons/256/256_maps_nowords_colored.png" alt="map">
+                                                <p>Map</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /responsive grid  --- list of categories--> <!-- id attractions -->
+                                <div data-role="page" id="attractions">
+                                    <div data-role="header" data-theme="b" data-position="fixed">
+                                        <h1>Attractions</h1>
+                                        <a href="#left-panel1" data-icon="grid" class="ui-btn-left">Menu</a>
+                                        <a href="#map" class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline"></a>
+                                    </div><!-- /header -->
+                                    
+                                    <div role="main" class="my-page ui-content jqm-fullwidth">
+                                        <ul data-role="listview" data-filter="true" data-filter-placeholder="Search..." data-inset="true">
+                                            <li><a href="#LaMesaDam">
+                                                <img src="img/LaMesaDam.png" class="ui-li-thumb">
+                                                <h2>La Mesa Dam</h2>
+                                                <p>121 km</p>
+                                                <!--<p class="ui-li-aside">iOS</p>-->
+                                            </a></li>
+                                            <li><a href="#LaMesaDam">
+                                                <img src="img/LaMesaEcoPark.png" class="ui-li-thumb">
+                                                <h2>La Mesa Eco Park</h2>
+                                                <p>at Quezon City</p>
+                                                <!--<p class="ui-li-aside">BlackBerry</p>-->
+                                            </a></li>
+                                            <li><a href="#LaMesaDam">
+                                                <img src="img/QuezonMemorialCircle.png" class="ui-li-thumb">
+                                                <h2>Quezon Memorial Circle</h2>
+                                                <p>at Quezon City</p>
+                                                <!--<p class="ui-li-aside">Windows Phone</p>-->
+                                            </a></li>
+                                            <li><a href="#LaMesaDam">
+                                                <img src="img/LaMesaDam.png" class="ui-li-thumb">
+                                                <h2>La Mesa Dam</h2>
+                                                <p>at Quezon City</p>
+                                                <!--<p class="ui-li-aside">iOS</p>-->
+                                            </a></li>
+                                            <li><a href="#LaMesaDam">
+                                                <img src="img/LaMesaEcoPark.png" class="ui-li-thumb">
+                                                <h2>La Mesa Eco Park</h2>
+                                                <p>at Quezon City</p>
+                                                <!--<p class="ui-li-aside">BlackBerry</p>-->
+                                            </a></li>
+                                            <li><a href="#LaMesaDam">
+                                                <img src="img/QuezonMemorialCircle.png" class="ui-li-thumb">
+                                                <h2>Quezon Memorial Circle</h2>
+                                                <p>at Quezon City</p>
+                                                <!--<p class="ui-li-aside">Windows Phone</p>-->
+                                            </a></li>
+                                            <li><a href="#LaMesaDam">
+                                                <img src="img/LaMesaDam.png" class="ui-li-thumb">
+                                                <h2>La Mesa Dam</h2>
+                                                <p>at Quezon City</p>
+                                                <!--<p class="ui-li-aside">iOS</p>-->
+                                            </a></li>
+                                            <li><a href="#LaMesaDam">
+                                                <img src="img/LaMesaEcoPark.png" class="ui-li-thumb">
+                                                <h2>La Mesa Eco Park</h2>
+                                                <p>at Quezon City</p>
+                                                <!--<p class="ui-li-aside">BlackBerry</p>-->
+                                            </a></li>
+                                            <li><a href="#LaMesaDam">
+                                                <img src="img/QuezonMemorialCircle.png" class="ui-li-thumb">
+                                                <h2>Quezon Memorial Circle</h2>
+                                                <p>at Quezon City</p>
+                                                <!--<p class="ui-li-aside">Windows Phone</p>-->
+                                            </a></li>
+                                            
+                                        </ul>
+                                    </div><!-- /content -->
+                                    <!-- id nav-panel-->
+                                    <div data-role="panel" id="left-panel1" data-theme="b">
+                                        <ul data-role="listview" data-theme="b" data-divider-theme="b" data-inset="false">
+                                            <li data-icon="false"><a href="#home">Home</a></li>
+                                            <li data-icon="false"><a href="#">Map</a></li>
+                                            <li data-role="list-divider">Categories</li>
+                                            <li><a href="#attractions">Attractions</a></li>
+                                            <li><a href="#attractions">Dining</a></li>
+                                            <li><a href="#attractions">Education</a></li>
+                                            <li><a href="#attractions">Events</a></li>
+                                            <li><a href="#attractions">Holy Places</a></li>
+                                            <li><a href="#attractions">Hospitals</a></li>
+                                            <li><a href="#attractions">Hotels</a></li>
+                                            <li><a href="#attractions">Shopping</a></li>
+                                            <li><a href="#attractions">Services</a></li>
+                                            <li><a href="#attractions">Transport</a></li>
+                                        </ul>
+                                    </div><!-- /panel -->
+                                </div><!-- /page -->
+                                
+                                <!-- portfolio page 1 -->
+                                <div data-role="page" id="LaMesaDam" data-title="LaMesaDam">
+                                    <div data-role="header" data-theme="b" data-position="fixed">
+                                        <h1>Attractions</h1>
+                                        <a href="#left-panel2" data-icon="grid" class="ui-btn-left">Menu</a>
+                                        <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline"></a>
+                                    </div>
+                                    
+                                    <div role="main" class="desc_img my-page ui-content jqm-fullwidth">
+                                        <div>
+                                            <img class="imgdisplay" src="img//LaMesaDam.png">
+                                            <p> <img style="width:16px;" src="img//icons/193-location-arrow.png"> 12 km </p>
+                                        </div>
+                                        <div role="main" class="my-page desc_page ui-content jqm-fullwidth">
+                                            <h1>La Mesa Dam</h1>
+                                            <h5>The La Mesa Dam is a dam in Quezon City in the Philippines. It is part of the Angat-Ipo-La Mesa water system, which supplies most of the water supply of Metro Manila. The La Mesa Dam is an earth dam whose reservoir can hold up to 50.5 million cubic meters occupying an area of 27 square kilometers.
+                                            Metro Manila and its surrounding areas are divided into two water concessionaires: Maynilad Water (red) and Manila Water (blue).
+                        
+                                            The water collected in the reservoir is treated on-site by the Maynilad Water Services, and at the Balara Treatment Plant further south by the Manila Water. Both water companies are private concessionaires awarded by the Metropolitan Waterworks and Sewerage System, the government agency in charge of water supply.</h5>
+                                            <a href="#nearby" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-carat-r">Nearby Places</a>
+                                        </div>
+                                    </div>
+                                    <!-- id nav-panel-->
+                                    <div data-role="panel" id="left-panel2" data-theme="b">
+                                        <ul data-role="listview" data-theme="b" data-divider-theme="b" data-inset="false">
+                                            <li data-icon="false"><a href="#home">Home</a></li>
+                                            <li data-icon="false"><a href="#">Map</a></li>
+                                            <li data-role="list-divider">Categories</li>
+                                            <li><a href="#attractions">Attractions</a></li>
+                                            <li><a href="#attractions">Dining</a></li>
+                                            <li><a href="#attractions">Education</a></li>
+                                            <li><a href="#attractions">Events</a></li>
+                                            <li><a href="#attractions">Holy Places</a></li>
+                                            <li><a href="#attractions">Hospitals</a></li>
+                                            <li><a href="#attractions">Hotels</a></li>
+                                            <li><a href="#attractions">Shopping</a></li>
+                                            <li><a href="#attractions">Services</a></li>
+                                            <li><a href="#attractions">Transport</a></li>
+                                        </ul>
+                                    </div><!-- /panel -->
+                                </div>
+                                <!-- /responsive grid  --- list of categories--> <!-- id attractions -->
+                                <div data-role="page" id="nearby">
+                                    <div data-role="header" data-theme="b" data-position="fixed">
+                                        <h1>Attractions</h1>
+                                        <a href="#left-panel3" data-icon="grid" class="ui-btn-left">Menu</a>
+                                        <a href="#map" class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline"></a>
+                                    </div><!-- /header -->
+                                    
+                                    <div role="main" class="my-page ui-content jqm-fullwidth">
+                                        <ul data-role="listview" data-inset="true">
+                                            <li><a href="#LaMesaDam">
+                                                <img src="img/QuezonMemorialCircle.png" class="ui-li-thumb">
+                                                <h2>Quezon Memorial Circle</h2>
+                                                <p>at Quezon City</p>
+                                                <!--<p class="ui-li-aside">Windows Phone</p>-->
+                                            </a></li>
+                                            <li><a href="#LaMesaDam">
+                                                <img src="img/LaMesaDam.png" class="ui-li-thumb">
+                                                <h2>La Mesa Dam</h2>
+                                                <p>at Quezon City</p>
+                                                <!--<p class="ui-li-aside">iOS</p>-->
+                                            </a></li>
+                                            <li><a href="#LaMesaDam">
+                                                <img src="img/LaMesaEcoPark.png" class="ui-li-thumb">
+                                                <h2>La Mesa Eco Park</h2>
+                                                <p>at Quezon City</p>
+                                                <!--<p class="ui-li-aside">BlackBerry</p>-->
+                                            </a></li>
+                                            <li><a href="#LaMesaDam">
+                                                <img src="img/QuezonMemorialCircle.png" class="ui-li-thumb">
+                                                <h2>Quezon Memorial Circle</h2>
+                                                <p>at Quezon City</p>
+                                                <!--<p class="ui-li-aside">Windows Phone</p>-->
+                                            </a></li>					
+                                        </ul>
+                                    </div><!-- /content -->
+                                    <!-- id nav-panel-->
+                                    <div data-role="panel" id="left-panel3" data-theme="b">
+                                        <ul data-role="listview" data-theme="b" data-divider-theme="b" data-inset="false">
+                                            <li data-icon="false"><a href="#home">Home</a></li>
+                                            <li data-icon="false"><a href="#">Map</a></li>
+                                            <li data-role="list-divider">Categories</li>
+                                            <li><a href="#attractions">Attractions</a></li>
+                                            <li><a href="#attractions">Dining</a></li>
+                                            <li><a href="#attractions">Education</a></li>
+                                            <li><a href="#attractions">Events</a></li>
+                                            <li><a href="#attractions">Holy Places</a></li>
+                                            <li><a href="#attractions">Hospitals</a></li>
+                                            <li><a href="#attractions">Hotels</a></li>
+                                            <li><a href="#attractions">Shopping</a></li>
+                                            <li><a href="#attractions">Services</a></li>
+                                            <li><a href="#attractions">Transport</a></li>
+                                        </ul>
+                                    </div><!-- /panel -->
+                                </div><!-- /page -->
+                                <!-- MAP here -->
+                                <div data-role="page" id="map" data-title="map" data-url="map">
+                                     <div data-role="header" data-theme="b" data-position="fixed">
+                                        <h1>Map</h1>
+                                        <!--<a href="#left-panel2" class="ui-btn ui-shadow ui-corner-all ui-icon-grid ui-btn-icon-notext ui-btn-inline"></a>-->
+                                        <a href="#left-panel4" data-icon="grid" class="ui-btn-left">Menu</a>
+                                        <a href="#map" class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline"></a>
+                                    </div>
+                                    <div role="main" class="ui-content" id="map-canvas">
+                                        <!-- map loads here... -->
+                                    </div>
+                                    <!-- id nav-panel-->
+                                    <div data-role="panel" id="left-panel4" data-theme="b">
+                                        <ul data-role="listview" data-theme="b" data-divider-theme="b" data-inset="false">
+                                            <li data-icon="false"><a href="#home">Home</a></li>
+                                            <li data-icon="false"><a href="#">Map</a></li>
+                                            <li data-role="list-divider">Categories</li>
+                                            <li><a href="#attractions">Attractions</a></li>
+                                            <li><a href="#attractions">Dining</a></li>
+                                            <li><a href="#attractions">Education</a></li>
+                                            <li><a href="#attractions">Events</a></li>
+                                            <li><a href="#attractions">Holy Places</a></li>
+                                            <li><a href="#attractions">Hospitals</a></li>
+                                            <li><a href="#attractions">Hotels</a></li>
+                                            <li><a href="#attractions">Shopping</a></li>
+                                            <li><a href="#attractions">Services</a></li>
+                                            <li><a href="#attractions">Transport</a></li>
+                                        </ul>
+                                    </div><!-- /panel -->
+                                </div>
+                                <!-- / MAP here -->
+                <!--*******************************Template HERE*********************-->	
+        </div>
+        <script src="js/jquery-1.8.3.min.js"></script>
+    	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

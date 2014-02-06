@@ -1,9 +1,3 @@
-/*
-    jQuery Mobile Portfolio
-    Author: Sam Deering (samdeering.com)
-    Article: jquery4u.com/mobile/jquery-mobile-portfolio/
-    Demo: jquery4u.com/demos/mobileportfoliosite/
-*/
 
 (function($,W,D,undefined)
 {
@@ -47,6 +41,7 @@
                 console.log(sn);
                 W.location = W.JQMP.SETTINGS.SOCIAL[sn];
             });
+			
 
         }
     }
