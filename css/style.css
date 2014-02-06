@@ -1,22 +1,37 @@
 /* image */
-.desc_img
+.desc_img, .imgdisplay
 {
-max-width:80%;
-margin:0 auto;
 display:block;
+width:100%;
+margin:0 auto;
+padding:0 !important;
 }
+.desc_img h1
+{
+padding:0 !important;
+}
+
+.imgdisplay h5
+{
+position: absolute;
+width: 100%;
+top:10em;
+}
+
+.imgdisplay{
+	position:relative;
+	-moz-box-shadow: 0px 0px 8px #111;
+	-webkit-box-shadow: 0px 0px 8px #111;
+	box-shadow: 0px 0px 8px #111;
+}
+
 /* // image */
 
 .ui-listview>.ui-li-has-thumb>.ui-btn {
 padding-left: 5.25em !important;
 }
 
-.ui-page-theme-a
-{
-background-image: url('../images/bg_sq.png') !important; background-repeat: repeat !important;
-}
-
-.ui-page-theme-a .ui-panel-wrapper 
+.ui-page-theme-a, .ui-panel-wrapper 
 {
 background-image: url('../images/bg_sq.png') !important; background-repeat: repeat !important;
 }
@@ -41,6 +56,11 @@ text-shadow:none; text-transform:uppercase;
     text-align: center;
 }
 /*styles for default here */
+.pt-menu
+{
+	margin-top:0.5em;
+}
+
 .pt-menu p
 {
 width:100%;
@@ -53,11 +73,11 @@ display: block;
 .pt-menu .ui-btn, .pt-menu .ui-btn:hover {
     cursor: pointer;
     display: inline-block;
-    height: 150px;
-    margin: 5px !important;
-    padding: 2px;
+    height: 100%;
+    margin: 0px !important;
+    padding: 9px 8px 2px;
     text-align: center;
-    width: 110px;
+    width: 25%;
 	font-size:12px;
 	word-wrap:break-word;
     /*border-radius: 200px;*/
@@ -78,16 +98,19 @@ display: block;
 
 .pt-menu .ui-btn img {
     /* height: 50px; */
-	width: 95%;
+	width: 100%;
 	display: block;
 	margin: 0 auto;
+	
+	-moz-box-shadow: 0px 0px 8px #111;
+	-webkit-box-shadow: 0px 0px 8px #111;
+	box-shadow: 0px 0px 8px #111;
+	border-radius:8px;
 }
 
 .header_style
 {
-background-image: url('../images/bg_sq_dark.png');
-background-repeat: repeat;
-text-align:center;
+margin:0 !important;
 }
 
 #home h1 img
@@ -96,26 +119,51 @@ width:80%;
 }
 
 /*styles for 480px and up */
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 280px) {
 	.pt-menu .ui-btn, .pt-menu .ui-btn:hover {
-		height: 130px;
-		width: 95px;
+		width: 40%;
+		vertical-align:text-top;
 	}
-	/* image */
-	.desc_img
-	{
-	max-width:40%;
-	/* margin:0 auto; */
-	float: left;
-	display:block;
-	margin-right:15px;
-	}
-	/* // image */
 	
 	#home h1 img
 	{
 	width:75%;
 	}
+	
+	.pt-menu .ui-btn img {
+	border-radius:10px;
+	}
+	
+	/* image */
+	.desc_img, .imgdisplay
+	{
+	width:100%;
+	}
+	/* // image */
+}
+
+/*styles for 480px and up */
+@media screen and (min-width: 480px) {
+	.pt-menu .ui-btn, .pt-menu .ui-btn:hover {
+		width: 20%;
+		vertical-align:text-top;
+	}
+	
+	#home h1 img
+	{
+	width:75%;
+	}
+	
+	.pt-menu .ui-btn img {
+	border-radius:10px;
+	}
+	
+	/* image */
+	.desc_img, .imgdisplay
+	{
+	width:90%;
+	}
+	/* // image */
 }
 
 /*styles for 500px and under
@@ -129,50 +177,84 @@ width:80%;
 /* testing em unit support - 33em should be 528px and 35em should be 560px in IE with default font settings */
 @media screen and (min-width: 33em) and (max-width: 35em) {
 	.pt-menu .ui-btn, .pt-menu .ui-btn:hover {
-		height: 150px;
-		width: 105px;
+		width: 20%;
 	}
 	#home h1 img
 	{
 	width:70%;
 	}
+	
+	.pt-menu .ui-btn img {
+	border-radius:10px;
+	}
+	
+	/* image */
+	.desc_img, .imgdisplay
+	{
+	width:85%;
+	}
+	/* // image */
 }
 
 /*styles for 620px and up */
 @media only screen and (min-width: 620px) {
 	.pt-menu .ui-btn, .pt-menu .ui-btn:hover {
-		height: 190px;
-		width: 160px;
+		width: 16%;
 	}
 	#home h1 img
 	{
 	width:65%;
 	}
+	.pt-menu .ui-btn img {
+	border-radius:12px;
+	}
+	/* image */
+	.desc_img, .imgdisplay
+	{
+	width:83%;
+	}
+	/* // image */
 }
 
 /*styles for 760px and up */
 @media only print, only screen and (min-width: 760px) {
 	.pt-menu .ui-btn, .pt-menu .ui-btn:hover {
-		height: 200px;
-		width: 150px;
+		width: 22%;
 	}
 	
 	#home h1 img
 	{
 	width:60%;
 	}
+	.pt-menu .ui-btn img {
+	border-radius:20px;
+	}
+	/* image */
+	.desc_img, .imgdisplay
+	{
+	width:80%;
+	}
+	/* // image */
 }
 
 /*styles for print that shouldn't apply */
 @media only print and (min-width: 800px) {
 	.pt-menu .ui-btn, .pt-menu .ui-btn:hover {
-		height: 90px;
-		width: 90px;
+		width: 25%;
 	}
 	#home h1 img
 	{
 	width:55%;
 	}
+	.pt-menu .ui-btn img {
+	border-radius:16px;
+	}
+	/* image */
+	.desc_img, .imgdisplay
+	{
+	width:70%;
+	}
+	/* // image */
 }
 
 /*styles for height 400px and under
